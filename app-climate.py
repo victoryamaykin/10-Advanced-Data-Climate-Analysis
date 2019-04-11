@@ -26,18 +26,18 @@ app = Flask(__name__)
 @app.route("/")
 def welcome():
     return (
-    f"Welcome to the Hawaii Climate analysis<br>"
-    f"Available Routes<br>"
+    f"Welcome to the Hawaii Climate Analysis and Exploration<br><br>"
+    f"Available Routes<br><br>"
     f"<strong>Precipitation Records 2016-2017</strong><br>"
-    f"/api/v1.0/precipitation<br>"
+    f"/api/v1.0/precipitation<br><br>"
     f"<strong>Station Names</strong><br>"
-    f"/api/v1.0/stations<br>"
+    f"/api/v1.0/stations<br><br>"
     f"<strong>Temperature Observations</strong><br>"
-    f"/api/v1.0/tobs<br>"
+    f"/api/v1.0/tobs<br><br>"
     f"<strong>Temperature Low, Average, and High with Start Date: 2017-08-09</strong><br>"
-    f"/api/v1.0/<{start}><br>"
+    f"/api/v1.0/2017-08-09<br><br>"
     f"<strong>Temperature Low, Average, and High with Start Date: 2017-08-09, End Date: 2017-08-23</strong><br>"
-    f"api/v1.0/</{start}>/<{end}>"
+    f"/api/v1.0/2017-08-09/2017-08-23"
     )
 
 
@@ -63,11 +63,9 @@ def stations():
     results = session.query(Station.name, Station.station).\
         group_by(Station.name).\
         order_by(Station.name.desc()).all()
-    
-    station = {name: station for name, station in results}
-        
+            
     return (
-        jsonify(station)
+        jsonify(results)
     )
 
 @app.route("/api/v1.0/tobs")
@@ -80,10 +78,8 @@ def tobs():
         group_by(Measurement.date).\
         order_by(Measurement.date.desc()).all()
 
-    tobs = {tobs: tobs for date, tobs in results}
-
     return(
-        jsonify(tobs)
+        jsonify(results)
     )
 
 @app.route("/api/v.1.0/<start>")
@@ -91,11 +87,11 @@ def tobs():
 def calc_temps(start):
     start = dt.date(2017,8,9) 
 
-    session.query(func.min(Measurement.tobs), func.avg(Measurement.tobs), func.max(Measurement.tobs)).\
+    results = session.query(func.min(Measurement.tobs), func.avg(Measurement.tobs), func.max(Measurement.tobs)).\
         filter(Measurement.date >= start).all()
     
     return (
-        jsonify(calc_temps('2017-08-09')
+        jsonify(results)
     )
 
 @app.route("/api/v1.0/<start>/<end>")
@@ -104,12 +100,10 @@ def calc_temps_trip(start, end):
     start = dt.date(2017,8,9) 
     end = dt.date(2017,8,23) 
 
-    session.query(func.min(Measurement.tobs), func.avg(Measurement.tobs), func.max(Measurement.tobs)).\
+    results = session.query(func.min(Measurement.tobs), func.avg(Measurement.tobs), func.max(Measurement.tobs)).\
         filter(Measurement.date >= start).filter(Measurement.date <= end).all()
-    
-    return (
-        jsonify(calc_temps_trip('2017-08-09', '2017-08-23'))
-    )
+
+    return jsonify(results)
 
 if __name__ == "__main__":
     app.run(debug=True)
