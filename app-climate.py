@@ -64,10 +64,10 @@ def stations():
         group_by(Station.name).\
         order_by(Station.name.desc()).all()
     
-    prcp = {name: name for station, name in results}
+    stations = {name: station for name, station in results}
 
     return (
-        jsonify(results)
+        jsonify(stations)
     )
 
 @app.route("/api/v1.0/tobs")
