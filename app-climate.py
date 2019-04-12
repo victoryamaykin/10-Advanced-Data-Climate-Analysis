@@ -35,9 +35,9 @@ def welcome():
     f"<strong>Temperature Observations</strong><br>"
     f"/api/v1.0/tobs<br><br>"
     f"<strong>Temperature Low, Average, and High with Start Date: 2017-08-09</strong><br>"
-    f"/api/v1.0/2017-08-09<br><br>"
+    f"/api/v1.0/calc_temps/date-here<br><br>"
     f"<strong>Temperature Low, Average, and High with Start Date: 2017-08-09, End Date: 2017-08-23</strong><br>"
-    f"/api/v1.0/2017-08-09/2017-08-23"
+    f"/api/v1.0/calc-temps_trip/start-date/end-date"
     )
 
 
@@ -63,7 +63,9 @@ def stations():
     results = session.query(Station.name, Station.station).\
         group_by(Station.name).\
         order_by(Station.name.desc()).all()
-            
+    
+    prcp = {name: name for station, name in results}
+
     return (
         jsonify(results)
     )
@@ -82,7 +84,7 @@ def tobs():
         jsonify(results)
     )
 
-@app.route("/api/v.1.0/<start>")
+@app.route("/api/v1.0/calc_temps/<start>")
 
 def calc_temps(start):
     start = dt.date(2017,8,9) 
@@ -94,7 +96,7 @@ def calc_temps(start):
         jsonify(results)
     )
 
-@app.route("/api/v1.0/<start>/<end>")
+@app.route("/api/v1.0/calc_temps_trip/<start>/<end>")
 
 def calc_temps_trip(start, end):
     start = dt.date(2017,8,9) 
