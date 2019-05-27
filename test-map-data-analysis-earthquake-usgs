@@ -1,0 +1,421 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "generated": 1558660443000,
+    "url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson",
+    "title": "USGS All Earthquakes, Past Hour",
+    "status": 200,
+    "api": "1.8.1",
+    "count": 10
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 1.6,
+        "place": "55km WSW of Cantwell, Alaska",
+        "time": 1558660087832,
+        "updated": 1558660374604,
+        "tz": -540,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/ak0196m61526",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/ak0196m61526.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 39,
+        "net": "ak",
+        "code": "0196m61526",
+        "ids": ",ak0196m61526,",
+        "sources": ",ak,",
+        "types": ",geoserve,origin,",
+        "nst": null,
+        "dmin": null,
+        "rms": 0.68,
+        "gap": null,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 1.6 - 55km WSW of Cantwell, Alaska"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -149.8729,
+          63.1107,
+          95.7
+        ]
+      },
+      "id": "ak0196m61526"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 1.5,
+        "place": "18km NW of Parkfield, CA",
+        "time": 1558659286650,
+        "updated": 1558659787351,
+        "tz": -480,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/nc73186096",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/nc73186096.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 35,
+        "net": "nc",
+        "code": "73186096",
+        "ids": ",nc73186096,",
+        "sources": ",nc,",
+        "types": ",geoserve,nearby-cities,origin,phase-data,scitech-link,",
+        "nst": 18,
+        "dmin": null,
+        "rms": 0.04,
+        "gap": 117,
+        "magType": "md",
+        "type": "earthquake",
+        "title": "M 1.5 - 18km NW of Parkfield, CA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.5770035,
+          36.0161667,
+          3.65
+        ]
+      },
+      "id": "nc73186096"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.89,
+        "place": "6km NNW of The Geysers, CA",
+        "time": 1558658910070,
+        "updated": 1558659365309,
+        "tz": -480,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/nc73186091",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/nc73186091.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 12,
+        "net": "nc",
+        "code": "73186091",
+        "ids": ",nc73186091,",
+        "sources": ",nc,",
+        "types": ",geoserve,nearby-cities,origin,phase-data,scitech-link,",
+        "nst": 12,
+        "dmin": 0.01143,
+        "rms": 0.04,
+        "gap": 82,
+        "magType": "md",
+        "type": "earthquake",
+        "title": "M 0.9 - 6km NNW of The Geysers, CA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.7908325,
+          38.8214989,
+          1.04
+        ]
+      },
+      "id": "nc73186091"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 1.25,
+        "place": "10km SW of Anza, CA",
+        "time": 1558658785000,
+        "updated": 1558659458690,
+        "tz": -480,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/ci38602936",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/ci38602936.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 24,
+        "net": "ci",
+        "code": "38602936",
+        "ids": ",ci38602936,",
+        "sources": ",ci,",
+        "types": ",focal-mechanism,geoserve,nearby-cities,origin,phase-data,",
+        "nst": 49,
+        "dmin": 0.03215,
+        "rms": 0.24,
+        "gap": 33,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 1.3 - 10km SW of Anza, CA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.7653333,
+          33.499,
+          2.39
+        ]
+      },
+      "id": "ci38602936"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.1,
+        "place": "79km SSW of Larsen Bay, Alaska",
+        "time": 1558658164326,
+        "updated": 1558658457303,
+        "tz": -540,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/ak0196m5lp84",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/ak0196m5lp84.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 68,
+        "net": "ak",
+        "code": "0196m5lp84",
+        "ids": ",ak0196m5lp84,",
+        "sources": ",ak,",
+        "types": ",geoserve,origin,",
+        "nst": null,
+        "dmin": null,
+        "rms": 0.49,
+        "gap": null,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 2.1 - 79km SSW of Larsen Bay, Alaska"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -154.6799,
+          56.9329,
+          0
+        ]
+      },
+      "id": "ak0196m5lp84"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 1.1,
+        "place": "69km SSW of Kobuk, Alaska",
+        "time": 1558658157572,
+        "updated": 1558658457675,
+        "tz": -540,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/ak0196m5llkc",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/ak0196m5llkc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 19,
+        "net": "ak",
+        "code": "0196m5llkc",
+        "ids": ",ak0196m5llkc,",
+        "sources": ",ak,",
+        "types": ",geoserve,origin,",
+        "nst": null,
+        "dmin": null,
+        "rms": 1.17,
+        "gap": null,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 1.1 - 69km SSW of Kobuk, Alaska"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -157.4105,
+          66.3205,
+          0
+        ]
+      },
+      "id": "ak0196m5llkc"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 1.3,
+        "place": "22km SE of Alamo, Nevada",
+        "time": 1558657833060,
+        "updated": 1558658071518,
+        "tz": -480,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/nn00685659",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/nn00685659.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 26,
+        "net": "nn",
+        "code": "00685659",
+        "ids": ",nn00685659,",
+        "sources": ",nn,",
+        "types": ",geoserve,origin,phase-data,",
+        "nst": 12,
+        "dmin": 0.709,
+        "rms": 0.25,
+        "gap": 164.23,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 1.3 - 22km SE of Alamo, Nevada"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -114.9977,
+          37.2107,
+          22.9
+        ]
+      },
+      "id": "nn00685659"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.86,
+        "place": "7km WNW of The Geysers, CA",
+        "time": 1558657765730,
+        "updated": 1558658225195,
+        "tz": -480,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/nc73186081",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/nc73186081.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 11,
+        "net": "nc",
+        "code": "73186081",
+        "ids": ",nc73186081,",
+        "sources": ",nc,",
+        "types": ",geoserve,nearby-cities,origin,phase-data,scitech-link,",
+        "nst": 11,
+        "dmin": 0.004762,
+        "rms": 0.05,
+        "gap": 75,
+        "magType": "md",
+        "type": "earthquake",
+        "title": "M 0.9 - 7km WNW of The Geysers, CA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.8253326,
+          38.8051682,
+          1.71
+        ]
+      },
+      "id": "nc73186081"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.2,
+        "place": "35km SSE of Cohoe, Alaska",
+        "time": 1558657496650,
+        "updated": 1558657924519,
+        "tz": -540,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/ak0196m5j8mr",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/ak0196m5j8mr.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 74,
+        "net": "ak",
+        "code": "0196m5j8mr",
+        "ids": ",ak0196m5j8mr,",
+        "sources": ",ak,",
+        "types": ",geoserve,origin,",
+        "nst": null,
+        "dmin": null,
+        "rms": 0.79,
+        "gap": null,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 2.2 - 35km SSE of Cohoe, Alaska"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -150.995,
+          60.0928,
+          19.9
+        ]
+      },
+      "id": "ak0196m5j8mr"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 0.93,
+        "place": "21km SW of La Quinta, CA",
+        "time": 1558656982430,
+        "updated": 1558659188777,
+        "tz": -480,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/ci38602912",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/ci38602912.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 13,
+        "net": "ci",
+        "code": "38602912",
+        "ids": ",ci38602912,",
+        "sources": ",ci,",
+        "types": ",geoserve,nearby-cities,origin,phase-data,",
+        "nst": 24,
+        "dmin": 0.02302,
+        "rms": 0.12,
+        "gap": 124,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 0.9 - 21km SW of La Quinta, CA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.452,
+          33.5165,
+          7.79
+        ]
+      },
+      "id": "ci38602912"
+    }
+  ],
+  "bbox": [
+    -157.4105,
+    33.499,
+    0,
+    -114.9977,
+    66.3205,
+    95.7
+  ]
+}
